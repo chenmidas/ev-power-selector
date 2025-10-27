@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EV Power Selector | 邁大師</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Midas Logo" class="logo">
+            <h1>EV Power Selector <span class="zh">電動車馬達選擇器</span></h1>
+            <select id="langSelect">
+                <option value="en">English</option>
+                <option value="zh">中文</option>
+            </select>
+        </header>
+        <section>
+            <label><span class="en">Input Voltage (V):</span><span class="zh">輸入電壓 (V)：</span></label>
+            <input type="number" id="voltage" placeholder="e.g. 36">
+            <label><span class="en">Target RPM:</span><span class="zh">目標轉速：</span></label>
+            <input type="number" id="rpm" placeholder="e.g. 3000">
+            <button onclick="calculate()"><span class="en">Calculate</span><span class="zh">計算</span></button>
+            <div id="result"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
